@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../font/Hahmlet/Hahmlet-VariableFont_wght.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-image: url("../image/gym/fitness_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.join a {
+  text-align: center;
+  float: none;
+  display: block;
+  overflow: hidden;
+  padding: 5px 0px;
+  margin: 0px 520px;
+}
+.link {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+.link:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
+}

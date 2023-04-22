@@ -1,0 +1,76 @@
+<!-- <div class="Footer">
+      <ul>
+        <li>
+          <a href="./other_files/fitness.html" target="_blank"
+            ><img
+              class="Footer_image"
+              src="./image/gym_icon/dumbbell.png"
+              alt="Dumbbell Pictur"
+            /><br /><b>Fitness</b></a
+          >
+        </li>
+        <li>
+          <a href="./other_files/Supplements.html" target="_blank"
+            ><img
+              class="Footer_image"
+              src="./image/gym_icon/water.png"
+              alt="Supplements Pictur"
+            /><br /><b>Supplements</b></a
+          >
+        </li>
+        <li>
+          <a href="./other_files/Diet.html" target="_blank">
+            <img
+              class="Footer_image"
+              src="./image/gym_icon/diet.png"
+              alt="Diet Pictur"
+            /><br /><b>Diet</b>
+          </a>
+        </li>
+        <li>
+          <a href="./other_files/Activities.html" target="_blank">
+            <img
+              class="Footer_image"
+              src="./image/gym_icon/activity.png"
+              alt="Activity Plan"
+            /><br /><b>Activities</b>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+
+Css_Code_for_footer
+<!-- .Footer {
+  padding: 30px 0;
+}
+.Footer ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+.Footer li {
+  float: none;
+  display: inline-block;
+  margin: 0px;
+  padding: 10px 20px;
+}
+.Footer li a {
+  color: white;
+  text-decoration: none;
+}
+.Footer li img:hover {
+  background-color: rgba(0, 0, 0, 0.54);
+  transition: 0.5s;
+}
+.Footer_image {
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+
+.footer1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+} -->
