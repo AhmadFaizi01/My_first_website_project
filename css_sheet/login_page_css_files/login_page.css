@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../../font/Hahmlet/Hahmlet-VariableFont_wght.ttf");
+}
+/* The orginal version that i made everything is alright */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-image: url("../../image/gym/fitness_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boder-box {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: aliceblue;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 250px 450px 0px 450px;
+  padding: 10px 0px 10px 0px;
+}
+h2 {
+  text-align: center;
+  padding: 10px 0px 20px 0px;
+}
+form label {
+  padding: 0px 0px 10px 100px;
+  margin: 20px 0px 10px 0px;
+}
+form input {
+  margin: 10px 0px 0px 20px;
+}
+.login_password {
+  margin: 10px 0px 0px 26px;
+}
+.login_input {
+  margin: 20px 200px;
+  font-size: 20px;
+}
+ul li {
+  display: inline-block;
+  margin: 5px 0px 0px 60px;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+body {
+  background-image: url("../../image/gym/fitness_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.border_box {
+  background-color: rgba(0, 0, 0, 0.644);
+  color: white;
+  border: solid 2px gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 250px 0px 0px 0px;
+  height: 200px;
+  width: 400px;
+}
+.inner_border_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login_text {
+  flex-basis: 50px;
+}
+.username_input {
+  flex-basis: 50px;
+  /* margin: 5px; */
+}
+.password_input {
+  margin: 6px;
+}
+.create_option li {
+  display: inline-flex;
+  margin: 15px 30px 0px 30px;
+}
+a {
+  border: solid 0px gray;
+  border-radius: 5px;
+}
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+}
+a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
+.login_input {
+  font-size: 20px;
+  margin: 10px 0px 0px 0px;
+}
