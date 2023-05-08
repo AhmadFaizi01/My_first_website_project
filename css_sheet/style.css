@@ -105,9 +105,11 @@ nav li a:hover {
   padding: 0;
 }
 body {
-  background-image: url("../image/gym/fitness_44jpg");
+  background-image: url("../image/gym/szabolcs-toth-QOMevotGSeE-unsplash.jpg");
   background-repeat: no-repeat;
-  /* background-size: auto; */
+  background-size: cover;
+  background-attachment: fixed; /* this to get rid of the white space */
+  background-position: center center; /* this to put position x and y from both side of screen to center */
 }
 .main_page_logo {
   font-size: 2rem;
@@ -131,13 +133,70 @@ nav ul {
   padding: 0;
 }
 nav ul li {
+  border: 1px solid transparent;
   border-radius: 5px;
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.575);
   margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex; /* I add this to get rid of stretch effect on the login button*/
+  justify-content: none;
+  align-items: none;
 }
 nav ul li a {
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.main_page_intro_text {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 1px white;
+}
+.main_page_join_button {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-shadow: 10px white;
+}
+.main_page_join_button a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+.main_page_join_button a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.hover_underline_animation a {
+  position: relative;
+  text-decoration: none;
+}
+
+.hover_underline_animation a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hover_underline_animation a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
 }
