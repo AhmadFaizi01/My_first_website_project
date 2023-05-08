@@ -103,6 +103,7 @@ nav li a:hover {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Hahmlet;
 }
 body {
   background-image: url("../image/gym/szabolcs-toth-QOMevotGSeE-unsplash.jpg");
@@ -120,7 +121,7 @@ body {
   /* display: flex; */
 }
 nav {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   background-color: rgba(0, 0, 0, 0.452);
   align-items: center;
   display: flex;

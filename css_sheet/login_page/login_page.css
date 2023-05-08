@@ -51,13 +51,16 @@ ul li {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* font-family: Hahmlet; */
   text-decoration: none;
   list-style: none;
 }
 body {
-  background-image: url("../../image/gym/fitness_4.jpg");
+  background-image: url("../../image/gym/szabolcs-toth-CyuvsE3TVak-unsplash.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
   display: flex;
   justify-content: center;
   align-items: center; /* Added to center vertically */
@@ -73,7 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 200px;
-  width: 400px;
+  width: 450px;
   position: relative; /* Added to make sure the box is relative to the body */
 }
 .inner_border_box {
@@ -95,7 +98,8 @@ body {
 }
 .inner_border_create_option li {
   display: inline-flex;
-  margin: 15px 30px 0px 30px;
+  padding: 0;
+  margin: 20px 30px 0px 42px;
 }
 */ */
 /* This is for inner_border_login_option */
