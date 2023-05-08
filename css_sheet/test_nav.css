@@ -1,39 +1,3 @@
-nav {
-  background: rgba(0, 0, 0, 0.452);
-  height: 50px;
-  width: 100%;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-  border-top: 1px solid rgba(0, 0, 0, 0.575);
-}
-label.Logo {
-  color: white;
-  font-size: 35px;
-  line-height: 40px;
-  padding: 0 100px;
-  font-weight: bold;
-}
-nav ul {
-  float: right;
-  margin-right: 20px;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 50px;
-  margin: 0;
-}
-nav ul li a {
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  padding: 5px 15px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.575);
-}
-nav li a:hover {
-  background: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
-}
 /* .Checkbtn {
   font-size: 30px;
   float: right;

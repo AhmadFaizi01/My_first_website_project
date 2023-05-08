@@ -53,16 +53,15 @@ ul li {
   padding: 0;
   text-decoration: none;
   list-style: none;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 body {
   background-image: url("../../image/gym/fitness_4.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   display: flex;
   justify-content: center;
+  align-items: center; /* Added to center vertically */
+  min-height: 100vh; /* Added to make sure the body takes full viewport height */
 }
 .border_box {
   background-color: rgba(0, 0, 0, 0.644);
@@ -73,9 +72,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 250px 0px 0px 0px;
   height: 200px;
   width: 400px;
+  position: relative; /* Added to make sure the box is relative to the body */
 }
 .inner_border_box {
   display: flex;
@@ -83,20 +82,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-.login_text {
+
+.inner_border_login_text {
   flex-basis: 50px;
 }
-.username_input {
+.inner_border_username_input {
   flex-basis: 50px;
   /* margin: 5px; */
 }
-.password_input {
+.inner_border_password_input {
   margin: 6px;
 }
-.create_option li {
+.inner_border_create_option li {
   display: inline-flex;
   margin: 15px 30px 0px 30px;
 }
+*/ */
+/* This is for inner_border_login_option */
 a {
   border: solid 0px gray;
   border-radius: 5px;
@@ -120,7 +122,7 @@ a:hover {
   transition: 0.5s;
 }
 
-.login_input {
+.inner_border_login_input {
   font-size: 20px;
   margin: 10px 0px 0px 0px;
 }
