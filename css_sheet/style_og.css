@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Hahmlet";
+  src: url("../font/Hahmlet/Hahmlet-VariableFont_wght.ttf");
+}
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: Hahmlet;
+  font-weight: 300;
+  line-height: 1.5;
+  color: white;
+}
+body {
+  background-image: url("../image/gym/fitness_2.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+} */
+/* nav {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.452); */
+/* border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.575); */
+/* } */
+/* label.main_page_logo {
+  color: white;
+  font-size: 35px;
+  line-height: 40px;
+  padding: 0 100px;
+  font-weight: bold;
+} */
+/* nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: space-around; */
+/* } */
+/* nav ul li {
+  cursor: pointer;
+  padding: 0.5rem;
+  flex: auto;
+  text-align: center; */
+/* line-height: 50px;
+  margin: 0; */
+/* } */
+/* nav ul li a {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+nav li a:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+} */
+/* @media all and (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nac ul li {
+    text-align: center;
+  }
+} */
+/* .main_page_intro_text h1 {
+  text-align: center;
+  text-shadow: 2px 2px 6px gray;
+  margin: 120px 50px;
+  padding: 0;
+  font-size: 60px;
+} */
+
+/* this for the membersship part*/
+
+/* .main_page_join_button {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.main_page_join_button a {
+  text-align: center;
+  float: none;
+  display: block;
+  overflow: hidden;
+  padding: 5px 0px;
+  margin: 0px 520px;
+}
+.main_page_link_to_next_page {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+.main_page_link_to_next_page:hover {
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Hahmlet;
+}
+body {
+  background-image: url("../image/gym/szabolcs-toth-QOMevotGSeE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* this to get rid of the white space */
+  background-position: center center; /* this to put position x and y from both side of screen to center */
+}
+.main_page_logo {
+  font-size: 2rem;
+  margin-left: 10px;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.452); */
+  /* border: 1px solid transparent; */
+  /* display: flex; */
+}
+nav {
+  /* font-size: 2rem; */
+  background-color: rgba(0, 0, 0, 0.452);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: start; */
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.575);
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex; /* I add this to get rid of stretch effect on the login button*/
+  justify-content: none;
+  align-items: none;
+}
+nav ul li a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  /* background-color: gold; */
+  background-color: #ff1a1a;
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+.main_page_intro_text {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 2px 1px white;
+}
+.main_page_join_button {
+  display: flex;
+  justify-content: center;
+}
+.main_page_join_button a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.52);
+}
+.main_page_join_button a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.hover_underline_animation a {
+  position: relative;
+  text-decoration: none;
+}
+
+.hover_underline_animation a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  /* background-color: gold; */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hover_underline_animation a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}

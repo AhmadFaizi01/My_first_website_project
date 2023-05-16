@@ -1,177 +1,113 @@
-@font-face {
-  font-family: "Hahmlet";
-  src: url("../font/Hahmlet/Hahmlet-VariableFont_wght.ttf");
-}
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  font-family: Hahmlet;
-  font-weight: 300;
-  line-height: 1.5;
-  color: white;
-}
-body {
-  background-image: url("../image/gym/fitness_2.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-} */
-/* nav {
-  font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.452); */
-/* border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-  border-top: 1px solid rgba(0, 0, 0, 0.575); */
-/* } */
-/* label.main_page_logo {
-  color: white;
-  font-size: 35px;
-  line-height: 40px;
-  padding: 0 100px;
-  font-weight: bold;
-} */
-/* nav ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  /* justify-content: space-around; */
-/* } */
-/* nav ul li {
-  cursor: pointer;
-  padding: 0.5rem;
-  flex: auto;
-  text-align: center; */
-/* line-height: 50px;
-  margin: 0; */
-/* } */
-/* nav ul li a {
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  padding: 5px 15px;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.575);
-}
-nav li a:hover {
-  background: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
-} */
-/* @media all and (max-width: 400px) {
-  nav ul {
-    flex-direction: column;
-  }
-  nac ul li {
-    text-align: center;
-  }
-} */
-/* .main_page_intro_text h1 {
-  text-align: center;
-  text-shadow: 2px 2px 6px gray;
-  margin: 120px 50px;
-  padding: 0;
-  font-size: 60px;
-} */
-
-/* this for the membersship part*/
-
-/* .main_page_join_button {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 25px;
-}
-.main_page_join_button a {
-  text-align: center;
-  float: none;
-  display: block;
-  overflow: hidden;
-  padding: 5px 0px;
-  margin: 0px 520px;
-}
-.main_page_link_to_next_page {
-  border: 1px solid transparent;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.52);
-}
-.main_page_link_to_next_page:hover {
-  transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.8);
-} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Hahmlet;
+  /* background-color: black; */
 }
 body {
-  background-image: url("../image/gym/szabolcs-toth-QOMevotGSeE-unsplash.jpg");
+  background-image: url(../image/gym/szabolcs-toth-QOMevotGSeE-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* this to get rid of the white space */
-  background-position: center center; /* this to put position x and y from both side of screen to center */
+  background-attachment: fixed;
+  background-position: center center;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.4rem;
 }
-.main_page_logo {
-  font-size: 2rem;
-  margin-left: 10px;
-  color: white;
-  /* background-color: rgba(0, 0, 0, 0.452); */
-  /* border: 1px solid transparent; */
-  /* display: flex; */
-}
-nav {
-  /* font-size: 2rem; */
-  background-color: rgba(0, 0, 0, 0.452);
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: start; */
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  border: 1px solid transparent;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.575);
-  margin-right: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  display: flex; /* I add this to get rid of stretch effect on the login button*/
-  justify-content: none;
-  align-items: none;
-}
-nav ul li a {
-  font-size: 1.5rem;
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
   color: white;
   text-decoration: none;
 }
-nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
 }
-nav ul li a {
+.logo {
+  cursor: pointer;
+  color: white;
+  font-size: 2.3rem;
+  text-shadow: 2px 2px black;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+  color: red;
+}
+.nav_links li a {
   position: relative;
+  text-decoration: none;
 }
 
-nav ul li a::after {
+.nav_links li a:after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -2px;
+  width: 100%;
   height: 2px;
-  width: 0%;
-  /* background-color: gold; */
-  background-color: #ff1a1a;
-  transition: width 0.3s ease-in-out;
+  bottom: -2px;
+  left: 0;
+  background-color: rgba(0, 136, 169, 1);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
 }
 
-nav ul li a:hover::after {
-  width: 100%;
+.nav_links li a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
 }
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+header.sticky .nav_links li a:hover {
+  color: red;
+}
+
+header.sticky .nav_links li a:after {
+  background-color: rgba(0, 136, 169, 1);
+}
+
+body.sticky_nav header.sticky {
+  background-color: rgba(0, 0, 0, 0.548);
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  background-color: rgba(30, 212, 212);
+}
+
 .main_page_intro_text {
   display: flex;
   height: 400px;
@@ -184,39 +120,132 @@ nav ul li a:hover::after {
 .main_page_join_button {
   display: flex;
   justify-content: center;
+  /* text-shadow: 1px 1px white; */
+}
+.main_page_link_to_next_page {
   font-size: 1.5rem;
-  text-shadow: 10px white;
-}
-.main_page_join_button a {
   color: white;
-  text-decoration: none;
   border: 1px solid transparent;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.52);
+  border-radius: 50px;
+  background-color: rgba(0, 136, 169, 1);
+  padding: 5px 20px;
 }
-.main_page_join_button a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
+.main_page_link_to_next_page:hover {
+  background-color: rgba(30, 212, 212);
 }
-.hover_underline_animation a {
-  position: relative;
-  text-decoration: none;
+.locate_gym {
+  align-items: center;
+  margin: 60px 0px 0px 0px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.548);
+}
+.locate_gym .gym_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  padding: 0px 80px 0px 80px;
+  margin: 0;
+}
+/* .gym_links span {
+  font-size: 4rem;
+} */
+.locate_gym .gym_links span {
+  order: 1;
+  font-size: 2rem;
+}
+.locate_gym .gym_links button {
+  order: 2;
+}
+footer h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
 }
 
-.hover_underline_animation a:before {
+.footer {
+  background-color: rgba(0, 0, 0, 0.548);
+  padding: 70px 0;
+}
+.footer_col {
+  width: 25%;
+  padding: 0 10px;
+}
+.footer_col h4 {
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer_col h4::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
   left: 0;
-  /* background-color: gold; */
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out 0s;
+  bottom: -10px;
+  background-color: rgba(0, 136, 169, 1);
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer_col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer_col ul li a {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer_col ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+.footer_col .social_links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 136, 169, 1);
+  margin: 0px 10px 10px 0px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.footer_col .social_links a:hover {
+  color: red;
+  background-color: #ffffff;
 }
 
-.hover_underline_animation a:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
+/*responsive*/
+@media (max-width: 767px) {
+  .footer_col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer_col {
+    width: 100%;
+  }
 }
