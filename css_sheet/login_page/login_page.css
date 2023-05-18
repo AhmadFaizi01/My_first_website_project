@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Hahmlet";
-  src: url("../../font/Hahmlet/Hahmlet-VariableFont_wght.ttf");
-}
-/* The orginal version that i made everything is alright */
+/* The original version that i made everything is alright */
 /* * {
   box-sizing: border-box;
   margin: 0;
@@ -46,14 +42,15 @@ ul li {
   display: inline-block;
   margin: 5px 0px 0px 60px;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: Hahmlet; */
   text-decoration: none;
   list-style: none;
+  font-family: Montserrat, sans-serif;
 }
 body {
   background-image: url("../../image/gym/szabolcs-toth-CyuvsE3TVak-unsplash.jpg");
@@ -61,6 +58,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+  backdrop-filter: blur(
+    2px
+  ); /* add this but i dont know why, dont ask me why */
   display: flex;
   justify-content: center;
   align-items: center; /* Added to center vertically */
@@ -68,14 +68,17 @@ body {
 }
 .border_box {
   background-color: rgba(0, 0, 0, 0.644);
+  backdrop-filter: blur(3px);
   color: white;
-  border: solid 2px gray;
+  border: 1px solid transparent;
   border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgb(128, 128, 128, 0.411),
+    0 6px 20px 0 rgba(128, 128, 128, 0.411);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 220px;
   width: 450px;
   position: relative; /* Added to make sure the box is relative to the body */
 }
@@ -98,17 +101,18 @@ body {
 }
 .inner_border_create_option li {
   display: inline-flex;
+  text-transform: capitalize;
   padding: 0;
-  margin: 20px 30px 0px 42px;
+  margin: 0 30px 0 42px;
 }
-*/ */
+
 /* This is for inner_border_login_option */
 a {
   border: solid 0px gray;
   border-radius: 5px;
 }
 a:link {
-  color: white;
+  color: red;
   background-color: transparent;
   text-decoration: none;
 }
@@ -122,15 +126,28 @@ a:active {
   background-color: transparent;
 }
 a:hover {
-  background: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
+  color: red;
+  /* background: rgba(0, 0, 0, 0.548);
+  transition: 0.5s; */
 }
-
 .inner_border_login_input {
-  font-size: 20px;
+  font-size: 1.5rem;
+  padding: 2.5px 10px 2.5px 10px;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  background-color: rgba(0, 136, 169, 1);
+  color: white;
+  text-transform: capitalize;
   margin: 10px 0px 0px 0px;
 }
-
+.inner_border_login_input:hover {
+  background-color: rgba(30, 212, 212);
+}
+.hover_underline_animation {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 5px;
+}
 .hover_underline_animation {
   position: relative;
   text-decoration: none;
@@ -144,7 +161,7 @@ a:hover {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: red;
+  background-color: rgba(0, 136, 169, 1);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
