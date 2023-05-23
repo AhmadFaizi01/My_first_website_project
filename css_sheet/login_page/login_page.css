@@ -142,6 +142,7 @@ a:hover {
 }
 .inner_border_login_input:hover {
   background-color: rgba(30, 212, 212);
+  transition: all 0.3s ease 0s;
 }
 .hover_underline_animation {
   border: 1px solid transparent;
