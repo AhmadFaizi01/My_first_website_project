@@ -81,6 +81,7 @@ header.sticky .nav_links li a:after {
 body.sticky_nav header.sticky {
   background-color: rgba(0, 0, 0, 0.548);
   backdrop-filter: blur(4px);
+  box-shadow: 0px 2px 5px #aaaaaa;
   transition: all 0.3s ease-in-out;
 }
 
@@ -111,7 +112,7 @@ button:hover {
   border: none;
   position: relative;
   padding: 17%;
-  box-shadow: 0px 2px 2px gray;
+  box-shadow: 0px 2px 5px #aaaaaa;
   background-image: url("../../image/gym/szabolcs-toth-G1xuAbp0D_w-unsplash.jpg");
 }
 .image_bg {
